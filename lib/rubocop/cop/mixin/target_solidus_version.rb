@@ -29,10 +29,10 @@ module RuboCop
       # This method overrides the one in RuboCop::Cop::Base.
       # Since this method is called for every offense, we can use it to check
       # if the Solidus version is affected and skip the offense if it's not.
-      def add_offense(...)
+      def add_offense(*args)
         return unless affected_solidus_version?
 
-        super(...)
+        super
       end
 
       private
