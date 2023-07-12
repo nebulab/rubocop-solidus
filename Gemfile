@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+ruby '~> 2.4.0'
+
+source 'https://rubygems.org'
 
 # Specify your gem's dependencies in rubocop-solidus.gemspec
 gemspec
 
-gem "rake", "~> 13.0"
-
-gem "rspec", "~> 3.0"
-
-gem "rubocop", "~> 1.21"
-
+gem 'bump'
 gem 'pry'
+gem 'rake'
+gem 'rspec'
+gem 'rubocop'

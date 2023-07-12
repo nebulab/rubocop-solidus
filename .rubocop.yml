@@ -1,3 +1,18 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.4
+
 Naming/FileName:
  Exclude:
    - lib/rubocop-solidus.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
+    - '*.gemspec'
+
+Metrics/ClassLength:
+  Exclude:
+    - 'tasks/**/*.rb'
